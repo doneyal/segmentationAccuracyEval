@@ -1,11 +1,11 @@
 
 # Evaluate Instance Segmentation
-Calculate Accuracy of a segmentation output (like Mask RCNN) based on an annotated reference
+Calculate Accuracy of a segmentation output (like Mask RCNN) based on an annotated reference.
 
-Python Packages required : numpy, argparse,time,cv2(OpenCv 3+) ,os, tensorflow(tested on tensorflow 1.12),json
+Python Packages required : numpy, argparse, time, cv2(OpenCv 3+), os, tensorflow(tested on tensorflow 1.12), json.
 
 # How to run
-"python segmentationAccuracyEval.py -l sample/legend.json -a sample/annotated_image.png -i sample/input_image.png -m sample/mask_rcnn_inception_resnet_v2_atrous_coco_2018_01_28 -op output.json"
+"python segmentationAccuracyEval.py -l sample/legend.json -a sample/annotated_image.png -i sample/input_image.png -m sample/mask_rcnn_inception_resnet_v2_atrous_coco_2018_01_28 -op output.json".
 
 model : Any  segmentation model given in [Tensorflow object detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) can be used.
 The model file (with name "frozen_inference_graph.pb") and object classes labels list (with name "object_detection_classes_coco.txt" is expected in the model directory.
