@@ -5,7 +5,6 @@ import cv2
 import os
 import tensorflow as tf
 import json
-import random
 
 
 #loading mask rcnn graph
