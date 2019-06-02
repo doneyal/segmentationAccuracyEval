@@ -11,7 +11,7 @@ The model file (with name "frozen_inference_graph.pb") and object classes labels
 # Matching Algorithm:
 The metric used is  Intersection/Union (IOU). The best match is based on maximum IOU values.
 
-For exmample : If Mask RCNN output had 4 instances of class 'Car' (Car1, Car2, Car3, Car4) and annotated image had 5 instances of class 'Car' Car-A, Car-B, Car-D, Car-D, Car-E).
+For example : If Mask RCNN output had 4 instances of class 'Car' (Car1, Car2, Car3, Car4) and annotated image had 5 instances of class 'Car' Car-A, Car-B, Car-D, Car-D, Car-E).
 
 IOU values of all combination are calculated ie Car1 vs (Car-A, Car-B, Car-D, Car-D, Car-E), Car2 vs (Car-A, Car-B, Car-D, Car-D, Car-E) forming a 4X5 matrix, where Row1 represents IOU for Car-1 with Car-A, Car-B etc.
 
